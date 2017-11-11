@@ -19,6 +19,5 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
-
 production:
-  url: <%=ENV.get("DATABASE_URL")%>
+  url: <%=ENV["DATABASE_URL"]%>
